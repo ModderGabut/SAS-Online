@@ -269,6 +269,9 @@
         let hasil = '<h3>Hasil:</h3><ul>';
 
         for (let key in kunciJawaban) {
+            document.querySelectorAll('input[type="radio"]').forEach(input => {
+    input.disabled = true;
+});
             const jawaban = document.querySelector(`input[name="${key}"]:checked`);
             if (jawaban && jawaban.value === kunciJawaban[key]) {
                 skor += 1.00;
@@ -286,4 +289,4 @@
     }
     </script>
 </body>
-</html>
+                       </html>
