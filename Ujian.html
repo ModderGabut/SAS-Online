@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ujian</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7fa;
+            color: #333;
+            padding: 20px;
+        }
+
+        h1, h2, h3 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        #timer {
+            font-size: 28px;
+            color: #e74c3c;
+            font-weight: bold;
+        }
+
+        .invis {
+            display: none;
+        }
+
+        ol {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            max-width: 700px;
+            margin: 20px auto;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+
+        ol li {
+            margin-bottom: 15px;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+
+        label {
+            display: block;
+            margin-left: 20px;
+        }
+
+        button {
+            display: block;
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 20px auto;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:disabled {
+            background: #bdc3c7;
+            cursor: not-allowed;
+        }
+
+        button:hover:enabled {
+            background: #2980b9;
+        }
+
+        #hasil {
+            max-width: 700px;
+            margin: 30px auto;
+            background: #ecf0f1;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 6px solid #27ae60;
+        }
+
+        #hasil ul {
+            padding-left: 20px;
+        }
+
+        #hasil li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>SAS IPA dan IPS</h1>
+    <h2 id="timerWrapper">Timer: <span id="timer">05:00</span></h2>
+
+    <h3>Soal IPA</h3>
+    <ol>
+        <li>Apakah fungsi utama daun pada tumbuhan?<br>
+            <label><input type="radio" name="ipa1" value="a"> a. Menyerap air</label>
+            <label><input type="radio" name="ipa1" value="b"> b. Bernapas</label>
+            <label><input type="radio" name="ipa1" value="c"> c. Fotosintesis</label>
+            <label><input type="radio" name="ipa1" value="d"> d. Menyimpan cadangan makanan</label>
+        </li>
+        <li>Contoh perubahan kimia adalah...<br>
+            <label><input type="radio" name="ipa2" value="a"> a. Es mencair</label>
+            <label><input type="radio" name="ipa2" value="b"> b. Kertas robek</label>
+            <label><input type="radio" name="ipa2" value="c"> c. Pembakaran</label>
+            <label><input type="radio" name="ipa2" value="d"> d. Air menguap</label>
+        </li>
+        <li>Planet terdekat dengan Matahari adalah...<br>
+            <label><input type="radio" name="ipa3" value="a"> a. Bumi</label>
+            <label><input type="radio" name="ipa3" value="b"> b. Mars</label>
+            <label><input type="radio" name="ipa3" value="c"> c. Venus</label>
+            <label><input type="radio" name="ipa3" value="d"> d. Merkurius</label>
+        </li>
+        <li>Hewan yang berkembang biak dengan bertelur disebut...<br>
+            <label><input type="radio" name="ipa4" value="a"> a. Vivipar</label>
+            <label><input type="radio" name="ipa4" value="b"> b. Ovipar</label>
+            <label><input type="radio" name="ipa4" value="c"> c. Ovovivipar</label>
+            <label><input type="radio" name="ipa4" value="d"> d. Metamorfosis</label>
+        </li>
+        <li>Air mendidih pada suhu...<br>
+            <label><input type="radio" name="ipa5" value="a"> a. 90</label>
+            <label><input type="radio" name="ipa5" value="b"> b. 80</label>
+            <label><input type="radio" name="ipa5" value="c"> c. 100</label>
+            <label><input type="radio" name="ipa5" value="d"> d. 120</label>
+        </li>
+    </ol>
+
+    <h3>Soal IPS</h3>
+    <ol>
+        <li>Apa ibu kota negara Indonesia?<br>
+            <label><input type="radio" name="ips1" value="a"> a. Bandung</label>
+            <label><input type="radio" name="ips1" value="b"> b. Jakarta</label>
+            <label><input type="radio" name="ips1" value="c"> c. Surabaya</label>
+            <label><input type="radio" name="ips1" value="d"> d. Medan</label>
+        </li>
+        <li>Mata uang yang digunakan di Indonesia adalah...<br>
+            <label><input type="radio" name="ips2" value="a"> a. Ringgit</label>
+            <label><input type="radio" name="ips2" value="b"> b. Dolar</label>
+            <label><input type="radio" name="ips2" value="c"> c. Rupiah</label>
+            <label><input type="radio" name="ips2" value="d"> d. Peso</label>
+        </li>
+        <li>Pulau terbesar di Indonesia adalah...<br>
+            <label><input type="radio" name="ips3" value="a"> a. Jawa</label>
+            <label><input type="radio" name="ips3" value="b"> b. Kalimantan</label>
+            <label><input type="radio" name="ips3" value="c"> c. Sumatera</label>
+            <label><input type="radio" name="ips3" value="d"> d. Sulawesi</label>
+        </li>
+        <li>Presiden pertama Indonesia adalah...<br>
+            <label><input type="radio" name="ips4" value="a"> a. Soeharto</label>
+            <label><input type="radio" name="ips4" value="b"> b. Habibie</label>
+            <label><input type="radio" name="ips4" value="c"> c. Megawati</label>
+            <label><input type="radio" name="ips4" value="d"> d. Soekarno</label>
+        </li>
+        <li>ASEAN merupakan organisasi negara-negara di wilayah...<br>
+            <label><input type="radio" name="ips5" value="a"> a. Asia Selatan</label>
+            <label><input type="radio" name="ips5" value="b"> b. Asia Tenggara</label>
+            <label><input type="radio" name="ips5" value="c"> c. Eropa</label>
+            <label><input type="radio" name="ips5" value="d"> d. Timur Tengah</label>
+        </li>
+    </ol>
+    
+    <h3>Soal Bahasa Indonesia</h3>
+<ol>
+    <li>Antonim dari kata *besar* adalah...<br>
+        <label><input type="radio" name="indo1" value="a"> a. Tinggi</label>
+        <label><input type="radio" name="indo1" value="b"> b. Panjang</label>
+        <label><input type="radio" name="indo1" value="c"> c. Kecil</label>
+        <label><input type="radio" name="indo1" value="d"> d. Pendek</label>
+    </li>
+    <li>Kata baku dari *aktifitas* adalah...<br>
+        <label><input type="radio" name="indo2" value="a"> a. Aktif</label>
+        <label><input type="radio" name="indo2" value="b"> b. Aktivitas</label>
+        <label><input type="radio" name="indo2" value="c"> c. Akfitas</label>
+        <label><input type="radio" name="indo2" value="d"> d. Aktivas</label>
+    </li>
+    <li>Kalimat yang menggunakan imbuhan *me-* adalah...<br>
+        <label><input type="radio" name="indo3" value="a"> a. Dia makan nasi</label>
+        <label><input type="radio" name="indo3" value="b"> b. Ibu tidur siang</label>
+        <label><input type="radio" name="indo3" value="c"> c. Ayah membaca buku</label>
+        <label><input type="radio" name="indo3" value="d"> d. Kami main bola</label>
+    </li>
+    <li>Sinonim dari kata *pandai* adalah...<br>
+        <label><input type="radio" name="indo4" value="a"> a. Bodoh</label>
+        <label><input type="radio" name="indo4" value="b"> b. Cerdas</label>
+        <label><input type="radio" name="indo4" value="c"> c. Malas</label>
+        <label><input type="radio" name="indo4" value="d"> d. Rajin</label>
+    </li>
+    <li>Kalimat tanya biasanya diakhiri dengan tanda...<br>
+        <label><input type="radio" name="indo5" value="a"> a. Titik</label>
+        <label><input type="radio" name="indo5" value="b"> b. Koma</label>
+        <label><input type="radio" name="indo5" value="c"> c. Seru</label>
+        <label><input type="radio" name="indo5" value="d"> d. Tanya</label>
+    </li>
+</ol>
+
+    <button id="submitBtn" onclick="cekJawaban()" disabled>Submit</button>
+
+    <div id="hasil"></div>
+
+    <script>
+    var waktu = 300;
+    var timerInterval;
+
+    window.onload = function() {
+        var timer = document.getElementById('timer');
+
+        function hitungTurun() {
+            var menit = Math.floor(waktu / 60);
+            var detik = waktu % 60;
+
+            timer.innerHTML = (menit < 10 ? '0' : '') + menit + ':' + (detik < 10 ? '0' : '') + detik;
+
+            if (waktu === 0) {
+                clearInterval(timerInterval);
+                alert('Waktu habis!');
+                cekJawaban();
+            } else {
+                waktu--;
+            }
+        }
+
+        timerInterval = setInterval(hitungTurun, 1000);
+
+        const allsoalNames = [
+          "ipa1", "ipa2", "ipa3", "ipa4", "ipa5",
+          "ips1", "ips2", "ips3", "ips4", "ips5",
+          "indo1", "indo2", "indo3", "indo4", "indo5"
+          ];
+        const submitBtn = document.getElementById("submitBtn");
+
+        document.querySelectorAll("input[type=radio]").forEach(input => {
+            input.addEventListener("change", () => {
+                const semuaTerisi = allsoalNames.every(name => 
+                    document.querySelector(`input[name="${name}"]:checked`)
+                );
+                submitBtn.disabled = !semuaTerisi;
+            });
+        });
+    };
+
+    function cekJawaban() {
+        const submitBtn = document.getElementById("submitBtn");
+        submitBtn.disabled = true;
+
+        const kunciJawaban = {
+          ipa1: "c",
+          ipa2: "c",
+          ipa3: "d",
+          ipa4: "b",
+          ipa5: "c",
+          ips1: "b",
+          ips2: "c",
+          ips3: "b",
+          ips4: "d",
+          ips5: "b",
+          indo1: "c",
+          indo2: "b",
+          indo3: "c",
+          indo4: "b",
+          indo5: "d"
+        };
+
+        clearInterval(timerInterval);
+        document.getElementById("timerWrapper").classList.add("invis");
+
+        let skor = 0;
+        let hasil = '<h3>Hasil:</h3><ul>';
+
+        for (let key in kunciJawaban) {
+            const jawaban = document.querySelector(`input[name="${key}"]:checked`);
+            if (jawaban && jawaban.value === kunciJawaban[key]) {
+                skor += 1.00;
+                hasil += `<li>${key.toUpperCase()} - <strong style="color:green">Benar</strong></li>`;
+            } else {
+                skor -= 1.00;
+                hasil += `<li>${key.toUpperCase()} - <strong style="color:red">Salah</strong> (Jawaban benar: ${kunciJawaban[key].toUpperCase()})</li>`;
+            }
+        }
+
+        if (skor < 0) skor = 0;
+
+        hasil += `</ul><h3>Skor Akhir: ${skor}</h3>`;
+        document.getElementById('hasil').innerHTML = hasil;
+    }
+    </script>
+</body>
+</html>
